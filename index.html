@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisteminha</title>
+    <link rel="stylesheet" href="/assets/reset.css">
+    <link rel="stylesheet" href="/assets/global.css">
+    <link rel="stylesheet" href="/assets/login.css">
+    <link rel="stylesheet" href="/assets/cadastro.css">
+    <link rel="stylesheet" href="/assets/perfil.css">
+    <link rel="stylesheet" href="/assets/encontrarUsuario.css">
+    <link rel="stylesheet" href="/assets/redefinirSenha.css">
+    
+</head>
+<body>
+    <div class="global">
+
+        <section class="secao secao__Login displayOFF">
+            <form class="caixa__Login" onsubmit="entrarLogin(event)">
+                <p class="titulo titulo__Login">Área do Cliente</p>
+                <h3 class="subtitulo subtitulo__Login">Fazer Login</h3>
+                <p id="erroMensagem__Login"></p>
+                <input type="text" name="Usuario" id="usuario__Login" class="input__Login" placeholder="Usuário">
+                <input type="text" name="Senha" id="senha__Login" class="input__Login" placeholder="Senha">
+                <a href="#" class="esqueceuSenha_Link" onclick="irPara_EsqueceuSenha()">Esqueceu a senha?</a>
+                <div class="botaoGrupo__Login">
+                    <button type="submit" class="botao">Entrar</button>
+                    <a href="#" class="criarConta_Link" onclick="irPara__Cadastro()">Criar Conta</a>
+                </div>
+            </form>
+        </section>
+
+        <section class="secao secao__Cadastro displayOFF">       
+            <form class="caixa__Cadastro" onsubmit="salvarCadastro(event)">
+                <h1 class="titulo titulo__Cadastro">Crie sua conta Premium</h1>
+                <h3 class="subtitulo subtitulo__Cadastro">Fazer cadastro</h3>
+                <p id="erroMensagem__Cadastro"></p>
+                <div class="nomeGrupo__Cadastro">
+                    <input type="text" name="firstName" id="PrimeiroNome" placeholder="Nome" class="input__Cadastro">
+                    <input type="text" name="lastName" id="Sobrenome" placeholder="Sobrenome" class="input__Cadastro">
+                </div>
+                <input type="text" name="userName" id="nomeUsuario__Cadastro" placeholder="Nome de usuário" class="input__Cadastro">
+                <p id="usuarioDescricao__Cadastro" class="inputDescricao__Cadastro">Você pode usar letras e números</p>
+                <div class="senhaGrupo__Cadastro">
+                    <input type="text" name="password" id="senha__Cadastro" placeholder="senha" class="input__Cadastro">
+                    <input type="text" name="confirmPassword" id="confirmarSenha__Cadastro" placeholder="Confirmar" class="input__Cadastro">
+                </div>
+                <p id="senhaDescricao__Cadastro" class="inputDescricao__Cadastro">Use oito ou mais caracteres com uma combinação de letras, números e símbolos</p>
+                <div class="botaoGrupo__Cadastro">
+                    <a href="#" class="retornarLogin" onclick="irPara__Login()">Faça login em vez disso</a>
+                    <button type="submit" class="botao">Salvar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="secao secao__Perfil displayOFF">       
+            <div class="caixa__Perfil">
+                <div class="perfilGrupo">
+                    <p class="titulo titulo__Perfil">Perfil</p>
+                    <h3 class="subtitulo subtitulo__Perfil">Nome de Usuário:</h3>
+                    <p id="usuario__Peril" class="descricao__Perfil">João</p>
+                    <h3 class="subtitulo subtitulo__Perfil">Nome Completo:</h3>
+                    <p id="nome__Perfil" class="descricao__Perfil">João Rocha</p>
+                    <h3 class="subtitulo subtitulo__Perfil">Senha:</h3>
+                    <p id="senha__Perfil" class="descricao__Perfil">joao1234</p>
+                </div>
+                <input type="button" value="Sair" class="botao botaoPerfil" onclick="irPara__Login()">
+            </div>
+        
+        </section>
+
+        <section class="secao secao__Esqueceu displayOFF">       
+            <form class="esqueceuConteudo" onsubmit="proximoEsqueceu(event)">
+                <div class="EsqueceuGrupo">
+                    <h1 class="titulo titulo__Esqueceu">Encontre seu usuário</h1>
+                    <h3 class="subtitulo subtitulo__Esqueceu">Digite o seu nome de usuário abaixo para recuperação de senha</h3>
+                    <input type="text" name="esqueceuSenha" id="nomeUsuario__Esqueceu" placeholder="Nome de usuário" class="input__EsqueceuSenha">
+                    <p id="erroMensagem__Esqueceu"></p>
+                </div>
+                
+                <div class="botaoGroup__Esqueceu">
+                    <a href="#" class="retornarLogin" onclick="irPara__Login()">Voltar para Login</a>
+                    <button type="submit" class="botao botaoEsqueceu">Próximo</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="secao secao__RecuperarSenha">       
+            <form class="recuperarSenha__Conteudo" onsubmit="confirmarRecuperarSenha(event)">
+                <div class="grupo__RecuperarSenha">
+                    <h1 class="titulo titulo__RecuperarSenha">Recuperação de Senha</h1>
+                    <h3 class="subtitulo subtitulo__RecuperarSenha">Digite sua nova senha e confirme abaixo</h3>
+                    <input type="text" name="senha_RecuperarSenha" id="senha__RecuperarSenha" placeholder="Senha" class="input__RecuperarSenha">
+                    <input type="text" name="confirmarSenha__RecuperarSenha" id="confirmarSenha__RecuperarSenha" placeholder="Confirma Senha" class="input__RecuperarSenha">
+                    <p id="erroMensagem__RecuperarSenha"></p>
+                </div>
+                
+                <div class="botaoGroup__RecuperarSenha">
+                    <a href="#" class="retornarLogin retornarLogin__RecuperarSenha" onclick="irPara__Login()">Voltar para Login</a>
+                    <button type="submit" class="botao botaoRecuperarSenha">Confirmar</button>
+                </div>
+            </form>
+            
+        </section>
+    </div>
+
+    <script src="/sistema.js"></script>
+</body>
+</html>
