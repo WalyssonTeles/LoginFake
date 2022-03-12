@@ -37,7 +37,7 @@
     box-sizing: border-box;
 }
 
-.esqueceuSenha_Link{
+.EncontrarUsuario_Link{
     font-size: 2rem;
     margin: 2rem 0 6rem;
 }
@@ -102,7 +102,7 @@
         width: 35rem;
     }
 
-    .esqueceuSenha_Link{
+    .EncontrarUsuario_Link{
         margin-bottom: 4rem;
     }
 }

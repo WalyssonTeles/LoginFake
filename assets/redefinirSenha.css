@@ -1,6 +1,6 @@
-/* --- RecuperarSenha --- */
+/* --- RedefinirSenha --- */
 
-.recuperarSenha__Conteudo{
+.RedefinirSenha__Conteudo{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,8 +13,8 @@
     width: 60rem;
 }
 
-.grupo__RecuperarSenha{
-    height: 70%;
+.grupo__RedefinirSenha{
+    height: 42rem;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -23,17 +23,17 @@
     margin-bottom: 0;
 }
 
-.titulo__RecuperarSenha{
+.titulo__RedefinirSenha{
     margin: 6rem 0 4rem;
 }
 
-.subtitulo__RecuperarSenha{
+.subtitulo__RedefinirSenha{
     margin: 0 0 8%;
     font-weight: 500;
     text-align: center;
 }
 
-.input__RecuperarSenha{
+.input__RedefinirSenha{
     padding: 1.5rem 2rem;
     font-size: 2rem;
     border: 1px solid #afaeae;
@@ -43,16 +43,16 @@
     box-sizing: border-box;
 }
 
-#erroMensagem__RecuperarSenha{
+#erroMensagem__RedefinirSenha{
     color: red;
     font-size: 2rem;
     text-align: center;
     line-height: 1.1em;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     height: 2.05rem;
 }
 
-.botaoGroup__RecuperarSenha{
+.botaoGroup__RedefinirSenha{
     margin: 1rem 0;
     width: 70%;
     height: 8.5rem;
@@ -60,4 +60,69 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width: 640px){
+    .RedefinirSenha__Conteudo{
+        width: 95%;
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    .grupo__RedefinirSenha{
+        height: auto;
+    }
+
+    .input__RedefinirSenha, .titulo__RedefinirSenha, .subtitulo__RedefinirSenha{
+        width: 80%;
+    }
+
+    .titulo__RedefinirSenha{
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 440px){
+    .secao__RedefinirSenha{
+        background-image: linear-gradient(to bottom, #fff, #fff);
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-height: 430px){
+    html{
+        font-size: 50%;
+    }
+
+    .secao__RedefinirSenha{
+        height: 54rem;
+        justify-content: flex-start;
+        box-sizing: border-box;
+
+        background-image: linear-gradient(to bottom, #fff, #fff);
+        background-repeat: no-repeat;
+    }
+
+    .RedefinirSenha__Conteudo{
+        height: 52rem;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .grupo__RedefinirSenha{
+        justify-content: center;
+        height: 40rem;
+    }
+
+    .titulo__RedefinirSenha{
+        margin: 0 0 2rem;
+    }
+
+    .botaoGroup__RedefinirSenha{
+        justify-content: flex-end;
+    }
+
+    .botaoRedefinirSenha{
+        margin-bottom: 1.5rem;
+    }
 }

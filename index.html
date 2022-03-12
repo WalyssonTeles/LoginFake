@@ -17,14 +17,14 @@
 <body>
     <div class="global">
 
-        <section class="secao secao__Login displayOFF">
+        <section class="secao secao__Login">
             <form class="caixa__Login" onsubmit="entrarLogin(event)">
                 <p class="titulo titulo__Login">Área do Cliente</p>
                 <h3 class="subtitulo subtitulo__Login">Fazer Login</h3>
                 <p id="erroMensagem__Login"></p>
                 <input type="text" name="Usuario" id="usuario__Login" class="input__Login" placeholder="Usuário">
                 <input type="text" name="Senha" id="senha__Login" class="input__Login" placeholder="Senha">
-                <a href="#" class="esqueceuSenha_Link" onclick="irPara_EsqueceuSenha()">Esqueceu a senha?</a>
+                <a href="#" class="EncontrarUsuario_Link" onclick="irPara_EncontrarUsuario()">Esqueceu a senha?</a>
                 <div class="botaoGrupo__Login">
                     <button type="submit" class="botao">Entrar</button>
                     <a href="#" class="criarConta_Link" onclick="irPara__Cadastro()">Criar Conta</a>
@@ -55,7 +55,7 @@
             </form>
         </section>
 
-        <section class="secao secao__Perfil">       
+        <section class="secao secao__Perfil displayOFF">       
             <div class="caixa__Perfil">
                 <div class="perfilGrupo">
                     <p class="titulo titulo__Perfil">Perfil</p>
@@ -71,35 +71,35 @@
         
         </section>
 
-        <section class="secao secao__Esqueceu displayOFF">       
-            <form class="esqueceuConteudo" onsubmit="proximoEsqueceu(event)">
-                <div class="EsqueceuGrupo"> 
-                    <h1 class="titulo titulo__Esqueceu">Encontre seu usuário</h1>
-                    <h3 class="subtitulo subtitulo__Esqueceu">Digite o seu nome de usuário abaixo para recuperação de senha</h3>
-                    <input type="text" name="esqueceuSenha" id="nomeUsuario__Esqueceu" placeholder="Nome de usuário" class="input__EsqueceuSenha">
-                    <p id="erroMensagem__Esqueceu"></p>
+        <section class="secao secao__EncontrarUsuario displayOFF">       
+            <form class="EncontrarUsuario__Conteudo" onsubmit="proximoEncontrarUsuario(event)">
+                <div class="EncontrarUsuario__Grupo"> 
+                    <h1 class="titulo titulo__EncontrarUsuario">Encontre seu usuário</h1>
+                    <h3 class="subtitulo subtitulo__EncontrarUsuario">Digite o seu nome de usuário abaixo para recuperação de senha</h3>
+                    <input type="text" name="EncontrarUsuario" id="nomeUsuario__EncontrarUsuario" placeholder="Nome de usuário" class="input__EncontrarUsuario">
+                    <p id="erroMensagem__EncontrarUsuario"></p>
                 </div>
                 
-                <div class="botaoGroup__Esqueceu">
+                <div class="botaoGroup__EncontrarUsuario">
                     <a href="#" class="retornarLogin" onclick="irPara__Login()">Voltar para Login</a>
-                    <button type="submit" class="botao botaoEsqueceu">Próximo</button>
+                    <button type="submit" class="botao botaoEncontrarUsuario">Próximo</button>
                 </div>
             </form>
         </section>
 
-        <section class="secao secao__RecuperarSenha displayOFF">       
-            <form class="recuperarSenha__Conteudo" onsubmit="confirmarRecuperarSenha(event)">
-                <div class="grupo__RecuperarSenha">
-                    <h1 class="titulo titulo__RecuperarSenha">Recuperação de Senha</h1>
-                    <h3 class="subtitulo subtitulo__RecuperarSenha">Digite sua nova senha e confirme abaixo</h3>
-                    <input type="text" name="senha_RecuperarSenha" id="senha__RecuperarSenha" placeholder="Senha" class="input__RecuperarSenha">
-                    <input type="text" name="confirmarSenha__RecuperarSenha" id="confirmarSenha__RecuperarSenha" placeholder="Confirma Senha" class="input__RecuperarSenha">
-                    <p id="erroMensagem__RecuperarSenha"></p>
+        <section class="secao secao__RedefinirSenha displayOFF">       
+            <form class="RedefinirSenha__Conteudo" onsubmit="confirmarRedefinirSenha(event)">
+                <div class="grupo__RedefinirSenha">
+                    <h1 class="titulo titulo__RedefinirSenha">Recuperação de Senha</h1>
+                    <h3 class="subtitulo subtitulo__RedefinirSenha">Digite sua nova senha e confirme abaixo</h3>
+                    <input type="text" name="senha_RedefinirSenha" id="senha__RedefinirSenha" placeholder="Senha" class="input__RedefinirSenha">
+                    <input type="text" name="confirmarSenha__RedefinirSenha" id="confirmarSenha__RedefinirSenha" placeholder="Confirma Senha" class="input__RedefinirSenha">
+                    <p id="erroMensagem__RedefinirSenha"></p>
                 </div>
                 
-                <div class="botaoGroup__RecuperarSenha">
-                    <a href="#" class="retornarLogin retornarLogin__RecuperarSenha" onclick="irPara__Login()">Voltar para Login</a>
-                    <button type="submit" class="botao botaoRecuperarSenha">Confirmar</button>
+                <div class="botaoGroup__RedefinirSenha">
+                    <a href="#" class="retornarLogin retornarLogin__RedefinirSenha" onclick="irPara__Login()">Voltar para Login</a>
+                    <button type="submit" class="botao botaoRedefinirSenha">Confirmar</button>
                 </div>
             </form>
             

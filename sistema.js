@@ -38,19 +38,19 @@ function salvarCadastro(event){
     
 }
 
-function proximoEsqueceu(event){
+function proximoEncontrarUsuario(event){
     event.preventDefault()
 
-    if(validadorEsqueceu()){
-        irPara_RecuperarSenha()
+    if(validadorEncontrarUsuario()){
+        irPara_RedefinirSenha()
     }
 }
 
-function confirmarRecuperarSenha(event){
+function confirmarRedefinirSenha(event){
     event.preventDefault()
 
-    if(validadorRecuperarSenha()){
-        let senhaRC = document.querySelector('#senha__RecuperarSenha')
+    if(validadorRedefinirSenha()){
+        let senhaRC = document.querySelector('#senha__RedefinirSenha')
 
         usuarioPremium[arrayIndice].senhaUsuario = senhaRC.value
 
@@ -185,9 +185,9 @@ function validadorLogin(){
     }
 }
 
-function validadorEsqueceu(){
-    let usuarioE = document.querySelector('#nomeUsuario__Esqueceu')
-    let erroMensagem__Esqueceu = document.querySelector('#erroMensagem__Esqueceu')
+function validadorEncontrarUsuario(){
+    let usuarioE = document.querySelector('#nomeUsuario__EncontrarUsuario')
+    let erroMensagem__EncontrarUsuario = document.querySelector('#erroMensagem__EncontrarUsuario')
     
     arrayIndice = -10
 
@@ -198,23 +198,23 @@ function validadorEsqueceu(){
     }
 
     if(usuarioE.value === ''){
-        erroMensagem__Esqueceu.innerHTML = 'Por favor, preencha o campo informado!'
+        erroMensagem__EncontrarUsuario.innerHTML = 'Por favor, preencha o campo informado!'
         erro_Alerta(usuarioE)
     }else if(arrayIndice < -1){
         erro_Alerta(usuarioE)
-        erroMensagem__Esqueceu.innerHTML = 'Usuário não encontrado!'
+        erroMensagem__EncontrarUsuario.innerHTML = 'Usuário não encontrado!'
     }else{
-        let erroMensagem__Esqueceu = document.querySelector('#erroMensagem__Esqueceu')
-        erroMensagem__Esqueceu.innerHTML = ''
+        let erroMensagem__EncontrarUsuario = document.querySelector('#erroMensagem__EncontrarUsuario')
+        erroMensagem__EncontrarUsuario.innerHTML = ''
         semErro(usuarioE)
         return true
     }
 }
 
-function validadorRecuperarSenha(){
-    let senhaRC = document.querySelector('#senha__RecuperarSenha')
-    let confirmarRC = document.querySelector('#confirmarSenha__RecuperarSenha')
-    let erroMensagemRC = document.querySelector('#erroMensagem__RecuperarSenha')
+function validadorRedefinirSenha(){
+    let senhaRC = document.querySelector('#senha__RedefinirSenha')
+    let confirmarRC = document.querySelector('#confirmarSenha__RedefinirSenha')
+    let erroMensagemRC = document.querySelector('#erroMensagem__RedefinirSenha')
 
     if(senhaRC.value === '' || confirmarRC.value === ''){
         erroMensagemRC.innerHTML = 'Preenchimento Obrigatório!'
@@ -246,13 +246,13 @@ function irPara__Login(){
     let cadastro = document.querySelector('.secao__Cadastro')
     let login = document.querySelector('.secao__Login')
     let perfil = document.querySelector('.secao__Perfil')
-    let esqueceu = document.querySelector('.secao__Esqueceu')
-    let recuperarSenha = document.querySelector('.secao__RecuperarSenha')
+    let EncontrarUsuario = document.querySelector('.secao__EncontrarUsuario')
+    let RedefinirSenha = document.querySelector('.secao__RedefinirSenha')
     login.classList.remove('displayOFF')
     cadastro.classList.add('displayOFF')
     perfil.classList.add('displayOFF')
-    esqueceu.classList.add('displayOFF')
-    recuperarSenha.classList.add('displayOFF')
+    EncontrarUsuario.classList.add('displayOFF')
+    RedefinirSenha.classList.add('displayOFF')
     
     let erroMensagem__Login = document.querySelector('#erroMensagem__Login')
     erroMensagem__Login.style.color = 'transparent'
@@ -270,13 +270,13 @@ function irPara__Cadastro(){
     let cadastro = document.querySelector('.secao__Cadastro')
     let login = document.querySelector('.secao__Login')
     let perfil = document.querySelector('.secao__Perfil')
-    let esqueceu = document.querySelector('.secao__Esqueceu')
-    let recuperarSenha = document.querySelector('.secao__RecuperarSenha')
+    let EncontrarUsuario = document.querySelector('.secao__EncontrarUsuario')
+    let RedefinirSenha = document.querySelector('.secao__RedefinirSenha')
     cadastro.classList.remove('displayOFF')
     login.classList.add('displayOFF')
     perfil.classList.add('displayOFF')
-    esqueceu.classList.add('displayOFF')
-    recuperarSenha.classList.add('displayOFF')
+    EncontrarUsuario.classList.add('displayOFF')
+    RedefinirSenha.classList.add('displayOFF')
     
     let nomeC = document.querySelector('#PrimeiroNome')
     let sobrenomeC = document.querySelector('#Sobrenome')
@@ -314,36 +314,36 @@ function irPara__Perfil(){
     arrayIndice = -10    
 }
 
-function irPara_EsqueceuSenha(){
+function irPara_EncontrarUsuario(){
     let login = document.querySelector('.secao__Login')
-    let esqueceu = document.querySelector('.secao__Esqueceu')
-    esqueceu.classList.remove('displayOFF')
+    let EncontrarUsuario = document.querySelector('.secao__EncontrarUsuario')
+    EncontrarUsuario.classList.remove('displayOFF')
     login.classList.add('displayOFF')
 
-    let nomeUsuario__Esqueceu = document.querySelector('#nomeUsuario__Esqueceu')
-    let erroMensagem__Esqueceu = document.querySelector('#erroMensagem__Esqueceu')
+    let nomeUsuario__EncontrarUsuario = document.querySelector('#nomeUsuario__EncontrarUsuario')
+    let erroMensagem__EncontrarUsuario = document.querySelector('#erroMensagem__EncontrarUsuario')
 
-    nomeUsuario__Esqueceu.value = ''
-    nomeUsuario__Esqueceu.style.borderColor = '#969595'
+    nomeUsuario__EncontrarUsuario.value = ''
+    nomeUsuario__EncontrarUsuario.style.borderColor = '#969595'
 
-    erroMensagem__Esqueceu.innerHTML = ''
+    erroMensagem__EncontrarUsuario.innerHTML = ''
 }
 
-function irPara_RecuperarSenha(){
-    let recuperarSenha = document.querySelector('.secao__RecuperarSenha')
-    let esqueceu = document.querySelector('.secao__Esqueceu')
-    recuperarSenha.classList.remove('displayOFF')
-    esqueceu.classList.add('displayOFF')
+function irPara_RedefinirSenha(){
+    let RedefinirSenha = document.querySelector('.secao__RedefinirSenha')
+    let EncontrarUsuario = document.querySelector('.secao__EncontrarUsuario')
+    RedefinirSenha.classList.remove('displayOFF')
+    EncontrarUsuario.classList.add('displayOFF')
 
-    let senha__RecuperarSenha = document.querySelector('#senha__RecuperarSenha')
-    let confirmarSenha__RecuperarSenha = document.querySelector('#confirmarSenha__RecuperarSenha')
-    let erroMensagem__RecuperarSenha = document.querySelector('#erroMensagem__RecuperarSenha')
+    let senha__RedefinirSenha = document.querySelector('#senha__RedefinirSenha')
+    let confirmarSenha__RedefinirSenha = document.querySelector('#confirmarSenha__RedefinirSenha')
+    let erroMensagem__RedefinirSenha = document.querySelector('#erroMensagem__RedefinirSenha')
     
-    senha__RecuperarSenha.value = ''
-    senha__RecuperarSenha.style.borderColor = '#afaeae'
-    confirmarSenha__RecuperarSenha.value = ''
-    confirmarSenha__RecuperarSenha.style.borderColor = '#afaeae'
-    erroMensagem__RecuperarSenha.innerHTML = ''
+    senha__RedefinirSenha.value = ''
+    senha__RedefinirSenha.style.borderColor = '#afaeae'
+    confirmarSenha__RedefinirSenha.value = ''
+    confirmarSenha__RedefinirSenha.style.borderColor = '#afaeae'
+    erroMensagem__RedefinirSenha.innerHTML = ''
 }
 
 

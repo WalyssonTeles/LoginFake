@@ -1,6 +1,6 @@
-/* --- ESQUECEU --- */
+/* --- Encontrar Usuario --- */
 
-.esqueceuConteudo{
+.EncontrarUsuario__Conteudo{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@
     width: 60rem;
 }
 
-.EsqueceuGrupo{
+.EncontrarUsuario__Grupo{
     height: 30rem;
     width: 90%;
     display: flex;
@@ -23,20 +23,20 @@
     margin-bottom: 0;
 }
 
-.titulo__Esqueceu{
+.titulo__EncontrarUsuario{
     margin: 0.8rem 0;
     text-align: center;
     width: 90%;
 }
 
-.subtitulo__Esqueceu{
+.subtitulo__EncontrarUsuario{
     margin: 1em 0;
     font-weight: 500;
     text-align: center;
     width: 90%;
 }
 
-.input__EsqueceuSenha{
+.input__EncontrarUsuario{
     padding: 1.5rem 2rem;
     font-size: 2rem;
     border: 1px solid #afaeae;
@@ -46,7 +46,7 @@
     box-sizing: border-box;
 }
 
-#erroMensagem__Esqueceu{
+#erroMensagem__EncontrarUsuario{
     color: red;
     font-size: 2rem;
     line-height: 1.1em;
@@ -55,7 +55,7 @@
     height: 2.05rem;
 }
 
-.botaoGroup__Esqueceu{
+.botaoGroup__EncontrarUsuario{
     margin: 0;
     width: 70%;
     height: 7.5rem;
@@ -66,39 +66,39 @@
 }
 
 @media (max-width: 635px){
-    .secao__Esqueceu{
+    .secao__EncontrarUsuario{
         background-image: linear-gradient(to bottom, #fff, #fff);
         background-repeat: no-repeat;
     }
 
-    .esqueceuConteudo{
+    .EncontrarUsuario__Conteudo{
         width: 92vw;
     }
 
-    .EsqueceuGrupo{
+    .EncontrarUsuario__Grupo{
         height: auto;
         margin-bottom: 2rem;
     }
 
-    .input__EsqueceuSenha{
+    .input__EncontrarUsuario{
         margin: 1.5rem 0;
         width: 80%;
     }
 
-    #erroMensagem__Esqueceu{
+    #erroMensagem__EncontrarUsuario{
         width: 80%;
     }
 }
 
 @media (max-width: 430px){
-    .input__EsqueceuSenha{
+    .input__EncontrarUsuario{
         margin: 1.5rem 0;
         width: 85%;
     }
 }
 
 @media (max-height: 430px){
-    .secao__Esqueceu{
+    .secao__EncontrarUsuario{
         background-image: linear-gradient(to bottom, #fff, #fff);
         background-repeat: no-repeat;
     }
