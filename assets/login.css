@@ -84,7 +84,7 @@
 
 @media (max-height: 450px){
     .secao__Login{
-        background-image: linear-gradient(to bottom, rgb(252, 157, 157), rgb(243, 119, 119));
+        background-image: linear-gradient(to bottom, #ffffff, #ffffff);
         background-repeat: no-repeat; 
         height: 54rem;
     }
