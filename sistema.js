@@ -1,4 +1,4 @@
-var arrayIndice = 0
+var arrayIndice = -10
 var primeiroNome
 var sobrenome
 var nomeUsuario
@@ -230,6 +230,7 @@ function validadorRedefinirSenha(){
     } else if (senhaRC.value === usuarioPremium[arrayIndice].senhaUsuario){
         erroMensagemRC.innerHTML = 'A nova senha não pode ser igual a anterior!'
         erroMensagemRC.style.color = '#e60505'
+        erroMensagemRC.style.height = 'auto'
         erro_Alerta(senhaRC)
         erro_Alerta(confirmarRC)
     } else{
