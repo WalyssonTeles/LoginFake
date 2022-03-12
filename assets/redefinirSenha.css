@@ -4,13 +4,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     
     background-color: #fff;
     border-radius: 10px;
     padding: 0;
-    height: 600px;
-    width: 600px;
+    height: 60rem;
+    width: 60rem;
 }
 
 .grupo__RecuperarSenha{
@@ -24,7 +24,7 @@
 }
 
 .titulo__RecuperarSenha{
-    margin: 15% 0 5%;
+    margin: 6rem 0 4rem;
 }
 
 .subtitulo__RecuperarSenha{
@@ -34,144 +34,28 @@
 }
 
 .input__RecuperarSenha{
-    padding: 15px 20px;
-    font-size: 20px;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
     border: 1px solid #afaeae;
     border-radius: 5px;
-    margin: 12px 0;
-    width: 80%;
+    margin: 1.2rem 0;
+    width: 43rem;
     box-sizing: border-box;
 }
 
 #erroMensagem__RecuperarSenha{
     color: red;
-    margin: 1% 0;
-    height: 20.5px;
+    font-size: 2rem;
+    margin: 1rem 0;
+    height: 2.05rem;
 }
 
 .botaoGroup__RecuperarSenha{
-    margin: 4% 0;
+    margin: 1rem 0;
     width: 70%;
-    height: 15%;
+    height: 8.5rem;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
-    cursor: p;
-}
-
-@media (max-width: 650px){
-    .recuperarSenha__Conteudo{
-        background-color: #ffffff;
-        border-radius: 10px;
-        padding: 0;
-        width: 95%;
-        justify-content: space-between;
-    }
-
-    .input__RecuperarSenha{
-        font-size: 22px;
-        border-radius: 10px;
-        width: 95%;
-    }
-}
-
-
-@media (max-width: 450px){
-    .secao__RecuperarSenha{
-        height: 100vh;
-        width: 100vw;
-    }
-
-    .recuperarSenha__Conteudo{
-        height: 510px;
-    }
-
-    .grupo__RecuperarSenha{
-        height: 400px;
-        width: 90%;
-        margin-bottom: 0;
-    }
-
-    .titulo__RecuperarSenha{
-        margin: 0;
-    }
-
-    .subtitulo__RecuperarSenha{
-        margin: 10px 0;
-    }
-}
-
-@media (max-height: 440px){
-    .secao__RecuperarSenha{
-        background-image: linear-gradient(to bottom, #ffffff, #f7f7f7);
-        background-repeat: no-repeat;
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .recuperarSenha__Conteudo{
-        height: 330px;
-        justify-content: space-between;
-    }
-
-    .grupo__RecuperarSenha{
-        height: 250px;
-        width: 90%;
-    }
-
-    .titulo__RecuperarSenha{
-        font-size: 30px;
-        margin: 7px 0;
-    }
-
-    .subtitulo__RecuperarSenha{
-        font-size: 20px;
-        margin: 6px 0;
-    }
-    .botaoGroup__RecuperarSenha{
-        height: 70px;
-        margin: 0;
-        transform: scale(0.8);
-    }
-
-    .retornarLogin__RecuperarSenha{
-        margin: 0;
-    }
-
-    .input__RecuperarSenha{
-        font-size: 18px;
-        border-radius: 10px;
-        margin: 6px 0;
-        width: 50%;
-    }
-}
-
-@media (max-height: 359px){
-    .recuperarSenha__Conteudo{
-        height: 310px;
-        justify-content: space-between;
-    }
-
-    .grupo__RecuperarSenha{
-        height: 240px;
-        width: 90%;
-    }
-
-    .titulo__RecuperarSenha{
-        font-size: 30px;
-        margin: 8px 0;
-    }
-
-    .subtitulo__RecuperarSenha{
-        font-size: 20px;
-        margin: 4px 0;
-    }
-
-    .input__RecuperarSenha{
-        padding: 10px 20px;
-        margin: 6px 0;
-        width: 50%;
-    }
-    
 }

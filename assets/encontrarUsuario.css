@@ -7,14 +7,14 @@
     justify-content: center;
     
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 1rem;
     padding: 0;
-    height: 600px;
-    width: 600px;
+    height: 60rem;
+    width: 60rem;
 }
 
 .EsqueceuGrupo{
-    height: 300px;
+    height: 30rem;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
 }
 
 .titulo__Esqueceu{
-    margin: 8px 0;
+    margin: 0.8rem 0;
     text-align: center;
     width: 90%;
 }
@@ -37,146 +37,28 @@
 }
 
 .input__EsqueceuSenha{
-    padding: 15px 20px;
-    font-size: 20px;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
     border: 1px solid #afaeae;
-    border-radius: 5px;
-    margin: 0;
-    width: 90%;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+    width: 47rem;
     box-sizing: border-box;
 }
 
 #erroMensagem__Esqueceu{
     color: red;
-    margin: 3% 0;
-    height: 20.5px;
+    font-size: 2rem;
+    margin: 1.6rem 0;
+    height: 2.05rem;
 }
 
 .botaoGroup__Esqueceu{
     margin: 0;
     width: 70%;
-    height: 75px;
+    height: 7.5rem;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
-}
-
-
-@media (max-width: 600px){
-    /* ---  ESQUECEU --- */
-    .secao__Esqueceu{
-        height: 100vh;
-        width: 100vw;
-        margin-top: 0;
-        justify-content: center;
-    }
-
-    .esqueceuConteudo{
-        height: 600px;
-        width: 100%;
-        justify-content: flex-start;
-    }
-
-    .EsqueceuGrupo{
-        height: 420px;
-        width: 90%;
-        margin-bottom: 0;
-    }
-
-    .titulo__Esqueceu{
-        font-size: 35px;
-        margin: 40px 0 10px;
-    }
-
-    .subtitulo__Esqueceu{
-        font-size: 18px;
-        width: 90%;
-        margin-bottom: 15%;
-    }
-
-    .input__EsqueceuSenha{
-        width: 90%;
-    }
-
-    #erroMensagem__Esqueceu{
-        font-size: 14px;
-        margin: 6% 0 4% 0;
-    }
-
-}
-
-@media (max-height: 420px){
-    .secao__Esqueceu{
-        height: 100vh;
-        background-image: linear-gradient(to bottom, #ffffff, #ffffff);
-        background-repeat: no-repeat;
-    }
-
-    .esqueceuConteudo{
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 0;
-        height: 400px;
-        width: 600px;
-        box-sizing: border-box;
-    }
-
-    .EsqueceuGrupo{
-        height: 255px;
-    }
-
-    .botaoGroup__Esqueceu{
-        transform: scale(0.9);
-    }
-
-    .titulo__Esqueceu,
-    .subtitulo__Esqueceu{
-        margin: 0;
-    }
-
-    .titulo__Esqueceu{
-        font-size: 37px;
-    }
-
-    .subtitulo__Esqueceu{
-        margin: 10px 0 20px;
-    }
-
-    .input__EsqueceuSenha{
-        border-radius: 10px;
-    }
-
-    #erroMensagem__Esqueceu{
-        margin-bottom: 5px;
-    }
-}
-
-@media (max-height: 325px){
-    .esqueceuConteudo{
-        background-color: #ffffff;
-        height: 95%;
-        width: 90%;
-    }
-
-    .EsqueceuGrupo{
-        height: 222px;
-    }
-
-    .botaoGroup__Esqueceu{
-        transform: scale(0.8);
-    }
-
-    .titulo__Esqueceu{
-        font-size: 30px;
-    }
-
-    .subtitulo__Esqueceu{
-        margin: 13px 0;
-        font-size: 18px;
-    }
-
-    #erroMensagem__Esqueceu{
-        font-size: 14px;
-    }
 }

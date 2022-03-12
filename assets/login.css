@@ -6,43 +6,45 @@
     align-items: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: #ffffff;
     padding: 0;
-    height: 650px;
-    width: 500px;
+    height: 65rem;
+    width: 50rem;
 }
 
 .titulo__Login{
     margin: 0;
 }
 .subtitulo__Login{
-    margin: 25px;
+    margin: 3rem 0;
 }
 
 #erroMensagem__Login{
     color: RED;
-    margin: 0 0 10px;
-    height: 20.5px;
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    height: 2.5rem;
 }
 
 .input__Login{
-    padding: 20px 15px;
-    margin: 10px;
-    width: 360px;
-    border-radius: 10px;
+    padding: 2rem 2.5rem;
+    margin: 1rem;
+    width: 36rem;
+    border-radius: 1rem;
     border: 1px solid #969595;
-    font-size: 24px;
+    font-size: 2.4rem;
     box-sizing: border-box;
 }
 
 .esqueceuSenha_Link{
-    margin: 20px 0 60px;
+    font-size: 2rem;
+    margin: 2rem 0 6rem;
 }
 
 .botaoGrupo__Login{
-    width: 325px;
-    height: 70px;
+    width: 70%;
+    height: 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,138 +53,52 @@
 
 .criarConta_Link{
     color: #31738d;
-    font-size: 20px;
+    font-size: 2rem;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 
-@media (max-width: 469px){
-    /* -- MEDIA Login -- */
-    .body{
-        width: 100%;
-    }
-    .secao__Login{
-        margin-top: 0;
-        width: 100%;
-        height: 100vh;
-      }
-  
-      .caixa__Login{
-          background-color: transparent;
-          padding: 0;
-          margin: 0 0 4%;
-          width: 98%;
-          height: 65%;
-      }
-      .titulo__Login{
-          margin: 0;
-          line-height: 1em;
-      }
-  
-      .subtitulo__Login{
-          margin: 2em 0 1em;
-      }
-  
-      .input__Login{
-          padding: 20px 15px;
-          margin: 10px 0;
-          width: 80%;
-      }
-
-      .criarConta_Link{
-        margin-top: 20px;
-      }
-}
-
-@media (max-height: 440px){
-    .secao__Login{
-        background-image: linear-gradient(to bottom, #ffffff, #fafafa);
-        background-repeat: no-repeat;
-        margin-top: 0;
-        width: 100vw;
-        height: 100vh;
-    }
-
+@media (max-width: 525px){
     .caixa__Login{
-        justify-content: flex-start;
-        border-radius: 10px;
-        background-color: #ffffff;
-        padding: 0;
-        height: 370px;
-        box-sizing: border-box;
-    }
-
-    .subtitulo__Login{
-        margin:  5px 0 15px;
-    }
-
-    #erroMensagem__Login{
-        margin: 0 0 5px;
-        height: 20.5px;
-    }
-
-    .input__Login{
-        padding: 10px 20px;
-        margin: 10px;
-        width: 400px;
-        border-radius: 10px;
-        font-size: 18px;
-        box-sizing: border-box;
-    }
-    
-    .esqueceuSenha_Link{
-        margin: 5px 0 20px;
-    }
-
-    .botaoGrupo__Login{
-        transform: scale(0.75);
-        width: 500px;
+        width: 93vw;
     }
 }
 
-@media (max-height: 362px){
+@media (max-width: 440px){
     .secao__Login{
-        background-image: linear-gradient(to bottom, #ffffff, #fafafa);
-        background-repeat: no-repeat;
-        margin-top: 0;
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .caixa__Login{
-        justify-content: flex-start;
-        border-radius: 10px;
-        height: 315px;
-        width: 90%;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .titulo__Login{
-        font-size: 30px;
-        line-height: 1.1;
-    }
-
-    .subtitulo__Login{
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    #erroMensagem__Login{
-        margin: 0 0 10px;
-        height: 20.5px;
+        background-image: linear-gradient(to bottom, #fff, #fff);
+        background-repeat: no-repeat; 
     }
 
     .input__Login{
-        margin: 0 0 9px;
+        padding: 2rem 2.5rem;
+        margin: 1rem;
+        width: 80%;
+        border-radius: 1rem;
+        border: 1px solid #969595;
+        font-size: 2.4rem;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-height: 450px){
+    .secao__Login{
+        background-image: linear-gradient(to bottom, rgb(252, 157, 157), rgb(243, 119, 119));
+        background-repeat: no-repeat; 
+        height: 54rem;
+    }
+
+    .caixa__Login{
+        width: 93vw;
+        height: 52rem;
+    }
+
+    .input__Login{
+        width: 35rem;
     }
 
     .esqueceuSenha_Link{
-        margin: 7px 0;
-    }
-
-    .criarConta_Link{
-        margin-top: 15px;
+        margin-bottom: 4rem;
     }
 }

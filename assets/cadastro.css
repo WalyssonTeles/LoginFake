@@ -3,299 +3,128 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     background-color: #ffffff;
-    border-radius: 10px;
-    height: 720px;
-    width: 600px;
+    border-radius: 1rem;
+    height: 72rem;
+    width: 60rem;
+    padding: 1rem;
 }
 
 #erroMensagem__Cadastro{    
-    margin: 0 0 30px;
-    height: 20.5px;
+    margin: 0 0 3rem;
+    font-size: 2rem;
+    line-height: 1.1em;
+    text-align: center;
+    height: 2.05rem;
 }
 
 .titulo__Cadastro{
-    margin-top: 2em;
+    margin-top: 0;
 }
 
 .subtitulo__Cadastro{
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .input__Cadastro{
-    padding: 15px 20px;
-    font-size: 20px;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
     border: 1px solid #afaeae;
-    border-radius: 5px;
-    margin: 0 2.5px;
-    width: 170px;
+    border-radius: 0.5rem;
+    margin: 0 0.25rem;
+    width: 17rem;
 }
 
 #nomeUsuario__Cadastro{
-    margin: 20px 0 0;
-    width: 394px;
+    margin: 2rem 0 0;
+    width: 39.3rem;
 }
 
 .inputDescricao__Cadastro{
-    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 1.2em;
     color: #696868;
-    width: 430px;
-    margin: 10px 0 20px;
-}
-
-#nomeDescricao__Cadastro{
-    margin-bottom: 0;
-    color: transparent;
+    width: 43rem;
+    margin: 1rem 0 2rem;
 }
 
 .botaoGrupo__Cadastro{
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 42rem;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 1.5rem;
 }
 
 .retornarLogin{
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #31738d;
     text-decoration: none;
 }
-
-
-@media (max-height: 620px){
-    /* --Media Cadastro-- */
-    .secao__Cadastro{
-        margin-top: 0;    
-        background-color: white;
-        padding: 15%;
-        width: 90%;
-    }
-
-    .titulo__Cadastro{
-        width: 90%;
-    }
-    
-    .nomeGrupo__Cadastro, .senhaGrupo__Cadastro{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: 0;
-    }
-
-    .input__Cadastro{
-        padding: 15px 20px;
-        font-size: 20px;
-        margin: 0 0 3% 0;
-        width: 100%;
-    }
-    
-    #nomeUsuario__Cadastro{
-        margin: 0;
-        width: 100%;
-    }
-
-    #confirmarSenha__Cadastro{
-        margin-bottom: 0;
-    }
-    
-    .inputDescricao__Cadastro{
-        font-size: 14px;
-        width: 105%;
-        margin: 10px 0;
-    }
-    
-    .botaoGrupo__Cadastro{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        height: 20%;
-        align-items: center;
-        margin-top: 25px;
-    }
-    
-    .retornarLogin{
-        margin-top: 1em;
-    }
-}
-
-@media (max-width: 650px){
-    .caixa__Cadastro{
-        flex-direction: column;
-        align-items: center;
-        height: 800px;
-        width: 100%;
-    }
-
-    .botaoGrupo__Cadastro{
-        width: 394px;
-    }
-}
-
-
-@media (max-width: 490px){
-    /* -- Cadastro -- */
+@media (max-height: 495px){
     .secao__Cadastro{
         background-image: linear-gradient(to bottom, #ffffff, #ffffff);
         background-repeat: no-repeat;
-        width: 100%;
-        height: 950px;
+        height: 58rem;
     }
-    
     .caixa__Cadastro{
-        flex-direction: column;
-        align-items: center;
-        height: 800px;
-        width: 100%;
+        height: 55rem;
+        padding-bottom: 2rem;
     }
-    
-    #erroMensagem__Cadastro{    
-        margin: 0 0 30px;
-        height: 20.5px;
-    }
-    
-    .titulo__Cadastro{
-        width: 90%;
-        margin: 0;
-    }
-    
-    .subtitulo__Cadastro{
-        margin-bottom: 40px;
-    }
-
-    .nomeGrupo__Cadastro, .senhaGrupo__Cadastro{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: 130px;
-    }
-    
-    .input__Cadastro{
-        padding: 15px 20px;
-        font-size: 20px;
-        border-radius: 5px;
-        margin: 0 2.5px;
-        width: 80%;
-        box-sizing: border-box;
-    }
-    
-    #nomeUsuario__Cadastro{
-        margin: 20px 0 0;
-        width: 80%;
-    }
-    
-    .inputDescricao__Cadastro{
-        font-size: 14px;
-        width: 77%;
-    }
-    
-    #nomeDescricao__Cadastro{
-        margin-bottom: 0;
-        color: transparent;
-    }
-    
-    .botaoGrupo__Cadastro{
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        width: 80%;
-        height: 80px;
-        align-items: center;
-        margin-top: 10px;
-    }
-    
-    .retornarLogin{
-        font-size: 18px;
-        font-weight: 600;
-        color: #31738d;
-        text-decoration: none;
-    }
-
 }
 
-@media (max-height: 430px){
+@media (max-width: 630px){
+    .caixa__Cadastro{
+        width: 92vw;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 475px){
     .secao__Cadastro{
-        background-image: linear-gradient(to bottom, #ffffff, #fafafa);
+        background-image: linear-gradient(to bottom, #ffffff, #ffffff);
         background-repeat: no-repeat;
-        width: 915px;
-        height: 820px;
+        height: 86rem;
+        width: 100vw;
         box-sizing: border-box;
     }
-    
     .caixa__Cadastro{
-        flex-direction: column;
-        align-items: center;
-        height: 800px;
-        width: 90%;
-    }
-    
-    #erroMensagem__Cadastro{    
-        margin: 0 0 30px;
-        height: 20.5px;
-    }
-    
-    .titulo__Cadastro{
-        width: 90%;
-        margin: 0;
-    }
-    
-    .subtitulo__Cadastro{
-        margin: 20px 0;
+        height: 82rem;
+        width: 94vw;
     }
 
-    .nomeGrupo__Cadastro, .senhaGrupo__Cadastro{
+    .nomeGrupo__Cadastro,
+    .senhaGrupo__Cadastro{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
         width: 100%;
-        height: 130px;
+        margin: 0;
     }
     
     .input__Cadastro{
-        padding: 15px 20px;
-        font-size: 20px;
-        border-radius: 5px;
-        margin: 0 2.5px;
-        width: 80%;
-        box-sizing: border-box;
+        font-size: 2rem;
+        margin: 1rem 0;
+        width: 70%;
     }
     
     #nomeUsuario__Cadastro{
-        margin: 20px 0 0;
-        width: 80%;
+        margin: 0.9rem 0;
+        width: 70%;
     }
     
     .inputDescricao__Cadastro{
-        font-size: 14px;
         width: 77%;
-    }
-    
-    #nomeDescricao__Cadastro{
-        margin-bottom: 0;
-        color: transparent;
+        margin: 0 0 1rem;
     }
     
     .botaoGrupo__Cadastro{
-        justify-content: space-between;
         flex-direction: column-reverse;
-        width: 80%;
-        height: 80px;
-        align-items: center;
-        margin-top: 10px;
+        height: 8rem;
+        width: 77%;
     }
-    
-    .retornarLogin{
-        font-size: 18px;
-        font-weight: 600;
-        color: #31738d;
-        text-decoration: none;
-    }
-
 }
-
 
