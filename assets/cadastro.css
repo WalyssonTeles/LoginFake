@@ -65,6 +65,10 @@
     text-decoration: none;
 }
 @media (max-height: 495px){
+    html{
+        font-size: 55%;
+    }
+    
     .secao__Cadastro{
         background-image: linear-gradient(to bottom, #ffffff, #ffffff);
         background-repeat: no-repeat;

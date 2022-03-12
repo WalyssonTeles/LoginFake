@@ -32,3 +32,30 @@
     font-size: 1.8rem;
     padding: 1rem 3.5rem;
 }
+
+@media (max-width: 545px){
+    .secao__Perfil{
+        background-image: linear-gradient(to bottom, #fff, #fff);
+        background-repeat: no-repeat;  
+    }
+
+    .caixa__Perfil{
+        width: 90%;
+    }
+}
+
+@media (max-height: 430px){
+    html{
+        font-size: 55%;
+    }
+
+    .secao__Perfil{
+        background-image: linear-gradient(to bottom, #fff, #fff);
+        background-repeat: no-repeat;
+        height: 60rem;  
+    }
+
+    .caixa__Perfil{
+        height: 35rem;
+    }
+}

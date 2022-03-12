@@ -83,6 +83,10 @@
 }
 
 @media (max-height: 450px){
+    html{
+        font-size: 55%;
+    }
+    
     .secao__Login{
         background-image: linear-gradient(to bottom, #ffffff, #ffffff);
         background-repeat: no-repeat; 

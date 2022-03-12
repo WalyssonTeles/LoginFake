@@ -37,7 +37,7 @@
     padding: 1.5rem 2rem;
     font-size: 2rem;
     border: 1px solid #afaeae;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     margin: 1.2rem 0;
     width: 43rem;
     box-sizing: border-box;
@@ -46,6 +46,8 @@
 #erroMensagem__RecuperarSenha{
     color: red;
     font-size: 2rem;
+    text-align: center;
+    line-height: 1.1em;
     margin: 1rem 0;
     height: 2.05rem;
 }
