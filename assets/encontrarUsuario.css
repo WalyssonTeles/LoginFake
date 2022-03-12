@@ -49,6 +49,8 @@
 #erroMensagem__Esqueceu{
     color: red;
     font-size: 2rem;
+    line-height: 1.1em;
+    text-align: center  ;
     margin: 1.6rem 0;
     height: 2.05rem;
 }
@@ -61,4 +63,43 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width: 635px){
+    .secao__Esqueceu{
+        background-image: linear-gradient(to bottom, #fff, #fff);
+        background-repeat: no-repeat;
+    }
+
+    .esqueceuConteudo{
+        width: 92vw;
+    }
+
+    .EsqueceuGrupo{
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .input__EsqueceuSenha{
+        margin: 1.5rem 0;
+        width: 80%;
+    }
+
+    #erroMensagem__Esqueceu{
+        width: 80%;
+    }
+}
+
+@media (max-width: 430px){
+    .input__EsqueceuSenha{
+        margin: 1.5rem 0;
+        width: 85%;
+    }
+}
+
+@media (max-height: 430px){
+    .secao__Esqueceu{
+        background-image: linear-gradient(to bottom, #fff, #fff);
+        background-repeat: no-repeat;
+    }
 }
