@@ -95,9 +95,7 @@ function irPara_RedefinirSenha(){
     let confirmarSenha__RedefinirSenha = document.querySelector('#confirmarSenha__RedefinirSenha')
     let erroMensagem__RedefinirSenha = document.querySelector('#erroMensagem__RedefinirSenha')
     
-    senha__RedefinirSenha.value = ''
-    senha__RedefinirSenha.style.borderColor = '#afaeae'
-    confirmarSenha__RedefinirSenha.value = ''
-    confirmarSenha__RedefinirSenha.style.borderColor = '#afaeae'
     erroMensagem__RedefinirSenha.innerHTML = ''
+
+    limparTudo(senha__RedefinirSenha, confirmarSenha__RedefinirSenha)
 }
